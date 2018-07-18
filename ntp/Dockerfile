@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER agtsmith@gmail.com
 
-RUN apk add --no-cache openntpd
+RUN apk add --no-cache openntpd # this will just install straight from repo
 
 COPY asset/ntpd.conf /etc/ntpd.conf
 
